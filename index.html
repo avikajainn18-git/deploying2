@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title> Registration form</title>
+    <link rel="stylesheet" href="deloy.css">
+</head>
+<body>
+    <h2>  Student Registration Form</h2>
+    <form>
+        <label for="fullname"></label>Your Full name: 
+        <input type="text" id="fullname" placeholder="enter ur full name"><br><br>
+        <label for="email" ></label>Your Email address 
+        <input type="email" id="mail" placeholder="enter a valid email address"><br><br>
+        <label for="age" ></label>Your Age:  
+        <input type="number" id="age" placeholder="enter ur age"><br><br>
+        <label for="password" ></label>Set a password: 
+        <input type="password" id="age" placeholder="enter password"><br><br>
+        <fieldset>
+        <legend>Gender: </legend><br>
+            <input type="radio" name="gender" value="male" required> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Rather not say<br>
+            </fieldset><br>
+        <fieldset>
+        <legend> Interests (choose all that apply)</legend><br>
+        <input type="checkbox" name="Interests" value="code" required> Coding<br>
+        <input type="checkbox" name="Interests" value="draw" required> Drawing<br>
+        <input type="checkbox" name="Interests" value="sports" required> Sports<br>
+        </fieldset><br><br>
+        <label> Class / Grade</label>
+        <select name="grade" required>
+                <option value="">-- Select Course --</option>
+                <option value="btech">Grade 1</option>
+                <option value="btech">Grade 2</option>
+                <option value="btech">Grade 3</option>
+                <option value="btech">Grade 4</option>
+                <option value="btech">Grade 5</option>
+            </select><br><br>
+        <label>Tell us (one line) about yourself: </label><br>
+            <textarea name="urself" rows="4" cols="40" placeholder="Eg: I love science" required></textarea>
+        <p> Fields marked with * are required.
+
+</p>
+<input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
